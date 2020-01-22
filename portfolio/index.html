@@ -3,28 +3,15 @@
 
 <head>
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <script src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
 
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
   <title>Danh's Porfolio</title>
   <!-- Template Main Javascript File -->
-
-  <!-- Inline styles -->
-  <style>
-    .iconify {
-      width: 30px;
-      height: 40px;
-      color: white;
-    }
-  </style>
 
 </head>
 
@@ -53,10 +40,9 @@
     </div>
   </header><!-- #header -->
   <div class="background">
-
     <!--================================================================
-                              INTRO
-  ================================================================-->
+                                INTRO
+    ================================================================-->
     <section id="intro">
       <div class="d-flex align-items-end justify-content-center" style="height: 80vh;">
         <div class="carousel-content">
@@ -71,20 +57,23 @@
 
       <!--================================================================
                               ABOUT
-  ================================================================-->
+      ================================================================-->
       <section id="about">
-        <div class="container">
+        <div class="container stretch100vh d-flex flex-column justify-content-center align-items-center">
+          <div class="row">
+            <div>
+              <header class="section-header">
+                <h3>About Me</h3>
+                <br>
+                <br>
+                <p class="h5">Just a young man, a gamer, animal lover, a hard-worker, and an passionate programmer.. </p>
+              </header>
+            </div>
+          </div>
 
-          <header class="section-header">
-            <h3>About Me</h3>
-            <br>
-            <br>
-            <p class="h5">Just a young man, a gamer, animal lover, a hard-worker, and an passionate programmer.. </p>
-          </header>
-
-          <div class="row about-cols">
-
-            <div class="col-md-4 wow fadeInUp">
+          <div class="row sm-col about-cols justify-content-md-center">
+            
+            <div class="col-md-8 col-lg-4 fadeInUp">
               <div class="about-col">
                 <div class="img">
                   <img src="./images/TMUS-630x420.jpg" alt="" class="img-fluid">
@@ -100,7 +89,7 @@
               </div>
             </div>
 
-            <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="col-md-8 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
               <div class="about-col">
                 <div class="img">
                   <img src="./images/UTD-1068x400.jpeg" alt="" class="img-fluid">
@@ -116,7 +105,7 @@
               </div>
             </div>
 
-            <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="col-md-8 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
               <div class="about-col">
                 <div class="img">
                   <img src="./images/activities.jpg" alt="" class="img-fluid">
@@ -137,82 +126,89 @@
           </div>
 
         </div>
-      </section><!-- #about -->
+      </section> <!-- #about -->
 
       <!--================================================================
                               SKILLS
-  ================================================================-->
+      ================================================================-->
       <section id="skills">
-        <div class="container">
+        <div class="container stretch100vh d-flex flex-column justify-content-md-center align-items-center">
 
-          <header class="section-header wow fadeInUp">
+          <header class="section-header wow fadeInUp" style="margin-top: 60px">
             <h3>Skills</h3>
             <br>
             <br>
             <p class="h5">Some languages, frameworks, and technologies I'm using or familiar with..</p>
           </header>
 
-          <div class="row">
-            <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
-              <h5 class="title"><a href="">Languages</a></h5>
-              <div class="col-1 ml-5 pl-2 icon"><span class="iconify" data-icon="logos:c-plusplus"
-                  data-inline="false"></span></div>
-              <div class="col-1 ml-1 icon"><span class="iconify" data-icon="logos:python" data-inline="false"></span>
+          <div class="row justify-content-md-center">
+            <div class="col-lg-8 col-md-8 box wow bounceInUp skill-block" data-wow-duration="1s">
+              <h5 class="title text-center"><a href="">Languages</a></h5>
+              <div class="row justify-content-around align-items-center">
+
+                <div class="col-1 icon"><span class="iconify" data-icon="logos:c-plusplus" data-inline="false"></span></div>
+                <div class="col-1 icon"><span class="iconify" data-icon="logos:python" data-inline="false"></span>
+                </div>
+                <div class="col-1 icon"><span class="iconify" data-icon="logos:javascript"
+                    data-inline="false"></span></div>
+                <div class="col-1 icon"><span class="iconify" data-icon="logos:php" data-inline="false"></span></div>
+                <div class="col-1 icon"><span class="iconify" data-icon="logos:graphql" data-inline="false"></span>
+                </div>
               </div>
-              <div class="col-1 ml-1 icon"><span class="iconify" data-icon="logos:javascript"
-                  data-inline="false"></span></div>
-              <div class="col-1 ml-1 icon"><span class="iconify" data-icon="logos:php" data-inline="false"></span></div>
-              <div class="col-1 ml-1 icon"><span class="iconify" data-icon="logos:graphql" data-inline="false"></span>
-              </div>
-              <br><br>
-              <p class="description">C++, Python 3, JavaScript, PHP, GraphQL</p>
+              <p class="description text-md-center">C++, Python 3, JavaScript<br> PHP, GraphQL</p>
             </div>
 
 
-            <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
-              <h4 class="title"><a href="">Web Frameworks</a></h4>
-              <div class="row">
-                <div class="col-1 ml-5 pl-4 icon"><span class="iconify" data-icon="logos:react"
+            <div class="col-lg-8 col-md-8 box wow bounceInUp skill-block" data-wow-duration="1.5s">
+              <h4 class="title text-center"><a href="">Web Frameworks</a></h4>
+              <div class="row justify-content-around align-items-center">
+                <div class="col-1 icon"><span class="iconify" data-icon="logos:react"
                     data-inline="false"></span></div>
-                <div class="col-1 ml-1 icon"><span class="iconify" data-icon="logos:angular-icon"
+                <div class="col-1 icon"><span class="iconify" data-icon="logos:angular-icon"
                     data-inline="false"></span></div>
-                <div class="col-1 ml-1 icon"><span class="iconify" data-icon="logos:html-5" data-inline="false"></span>
+                <div class="col-1 icon"><span class="iconify" data-icon="logos:html-5" data-inline="false"></span>
                 </div>
-                <div class="col-1 ml-1 icon"><span class="iconify" data-icon="logos:css-3" data-inline="false"></span>
+                <div class="col-1 icon"><span class="iconify" data-icon="logos:css-3" data-inline="false"></span>
                 </div>
-                <div class="col-1 ml-1 icon"><span class="iconify" data-icon="logos:bootstrap"
+                <div class="col-1 icon"><span class="iconify" data-icon="logos:bootstrap"
                     data-inline="false"></span></div>
               </div>
-              <div class="row">
-                <div class="col-1 ml-5 pl-4 icon"><span class="iconify" data-icon="logos:nodejs"
+
+              <div class="row justify-content-around align-items-center">
+                <div class="col-1 icon"><span class="iconify" data-icon="logos:nodejs"
                     data-inline="false"></span></div>
-                <div class="col-1 ml-1 icon"><span class="iconify" data-icon="logos:jquery"
-                    data-inline="false"></span></span></div>
-                <div class="col-1 ml-1 icon"><span class="iconify" data-icon="logos:php" data-inline="false"></span>
+                <div class="col-1 icon"><span class="iconify" data-icon="logos:jquery" data-inline="false"></span></span>
                 </div>
-                <div class="col-1 ml-1 icon"><span class="iconify" data-icon="logos:mysql" data-inline="false"></span>
+                <div class="col-1 icon"><span class="iconify" data-icon="logos:php" data-inline="false"></span>
                 </div>
-                <div class="col-1 ml-1 icon"><span class="iconify" data-icon="logos:mongodb" data-inline="false"></span>
+                <div class="col-1 icon"><span class="iconify" data-icon="logos:mysql" data-inline="false"></span>
+                </div>
+                <div class="col-1 icon"><span class="iconify" data-icon="logos:mongodb" data-inline="false"></span>
                 </div>
               </div>
-              <p class="description"> Reactjs, Angular, HTML5, CSS3<br>Bootstrap4, Nodejs, JQuery, MySQL</p>
+              <p class="description text-md-center"> Reactjs, Angular, HTML5<br>CSS3, Bootstrap4, Nodejs<br>JQuery, MySQL</p>
             </div>
 
-            <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
-              <h4 class="title"><a href="">Technologies</a></h4>
-              <div class="col-1 ml-5 pl-2 icon"><span class="iconify" data-icon="logos:google-cloud-platform"
-                  data-inline="false"></span></div>
-              <div class="col-1 ml-1 icon"><span class="iconify" data-icon="logos:google-cloud"
-                  data-inline="false"></span></div>
-              <div class="col-1 ml-1 icon"><span class="iconify" data-icon="logos:google-cloud-functions"
-                  data-inline="false"></span></div>
-              <div class="col-1 ml-1 icon"><span class="iconify" data-icon="logos:google-gsuite" data-inline="false"
-                  style="color: black"></span></div>
-              <div class="col-1 ml-1 icon"><span class="iconify" data-icon="logos:github-icon"
-                  data-inline="false"></span></div>
-              <br><br>
-              <p class="description">Google Echo-system Products, Google Cloud Services<br>(App-script, App-maker, Cloud
-                Function) Github</p>
+            <div class="col-lg-8 col-md-8 box wow bounceInUp skill-block" data-wow-duration="2.3s">
+              <h4 class="title text-sm-center"><a href="">Technologies</a></h4>
+              <div class="row justify-content-around align-items-center">
+
+                <div class="col-1 icon"><span class="iconify" data-icon="logos:google-cloud-platform"
+                    data-inline="false"></span></div>
+                <div class="col-1 icon"><span class="iconify" data-icon="logos:google-cloud"
+                    data-inline="false"></span></div>
+                <div class="col-1 icon"><span class="iconify" data-icon="logos:google-cloud-functions"
+                    data-inline="false"></span></div>
+                <div class="col-1  icon"><span class="iconify" data-icon="logos:google-gsuite" data-inline="false"
+                    style="color: black"></span></div>
+                <div class="col-1 icon"><span class="iconify" data-icon="logos:github-icon"
+                    data-inline="false"></span></div>
+              </div>
+              <div class="text-sm-center">
+                <p class="description">Google Echo-system Products<br>Google Cloud Services<br>(App-script, App-maker, Cloud
+                  Function)<br>Github</p>
+              </div>
+
             </div>
 
           </div>
@@ -220,11 +216,206 @@
         </div>
       </section><!-- #services -->
 
+      <!--================================================================
+                              PROJECTS
+      ================================================================-->
+      <section id="projects"  class="section-bg" >
+
+        <div class="stretch100vh d-flex flex-column align-items-center justify-content-center">
+
+        <div class="container d-flex flex-column align-items-center">
+          <div class="row">
+
+            <header class="section-header">
+              <h3 class="section-title">Projects</h3>
+              <br><br>
+              <p class="text-center h5">Projects have done or working on..</p>
+            </header>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-12">
+              <ul id="projects-flters">
+                <li data-filter="*" class="filter-active">All</li>
+                <li data-filter=".filter-tmus">T-Mobile</li>
+                <li data-filter=".filter-cave">Cave Consulting</li>
+                <li data-filter=".filter-others">Others</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row projects-container">
+
+            <div class="col-lg-6 col-md-6 projects-item filter-tmus wow fadeInUp">
+              <div class="projects-wrap">
+                <figure>
+                  <img src="./images/tmus1.jpg" class="img-fluid" alt="">
+                  <button type="button" class="btn btn-outline-success link-details" data-toggle="modal" data-target="#tmus1Details">
+                    Details
+                  </button>
+                </figure>
+
+                <div class="projects-info">
+                  <h4><a href="#">Anomaly Detection AI System</a></h4>
+                  <!-- <p>TMUS 1</p> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 projects-item filter-tmus wow fadeInUp" data-wow-delay="0.1s">
+              <div class="projects-wrap">
+                <figure>
+                  <img src="./images/tmus2.png" class="img-fluid" alt="">
+                  <button type="button" class="btn btn-outline-success link-details" data-toggle="modal" data-target="#tmus2Details">
+                    Details
+                  </button>
+                </figure>
+
+                <div class="projects-info">
+                  <h4><a href="#">Retail Experience Dashboard</a></h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 projects-item filter-cave wow fadeInUp" data-wow-delay="0.2s">
+              <div class="projects-wrap">
+                <figure>
+                  <img src="./images/cave1.png" class="img-fluid" alt="">
+                  <button type="button" class="btn btn-outline-success link-details" data-toggle="modal" data-target="#cave1Details">
+                    Details
+                  </button>
+                </figure>
+
+                <div class="projects-info">
+                  <h4><a href="#">Ticket Help-Desk System</a></h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 projects-item filter-cave wow fadeInUp">
+              <div class="projects-wrap">
+                <figure>
+                  <img src="./images/cave2.png" class="img-fluid" alt="">
+                  
+                  <button type="button" class="btn btn-outline-success link-details" data-toggle="modal" data-target="#cave2Details">
+                    Details
+                  </button>
+                </figure>
+
+                <div class="projects-info">
+                  <h4><a href="#">Customer Interactive Ticket Help-Desk Website</a></h4>
+                </div>
+              </div>
+            </div>
+            </div>
+            </div>
+        </div>
+      </section><!-- #projects -->
+
+
       </main>
 
       <!--==========================
     Footer
   ============================-->
+
+      <!-- Modal component (Dialog box) -->
+        <!-- Modal -->
+        <div class="modal fade" id="tmus1Details" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h6 class="modal-title font-weight-bolder" id="exampleModalLabel">Anomaly Detection AI System</h6>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Provided assistance to develop, debug, optimize, and implement an alarms anomaly detection system.<br><br>
+                The system can detect, classify, learn, and predict abnormal alarms generated by vendors' cell phone towers.<br><br>
+                <b>Technologies used:</b><br>
+                Python 3(Scikit, Pandas, Matlab), Elastic Search, MS SQL Server, Kibana, PowerBI
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Okay..</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Nice!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+            <!-- Modal -->
+      <div class="modal fade" id="tmus2Details" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h6 class="modal-title font-weight-bolder" id="exampleModalLabel">Retail Experience Dashboard</h6>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Designed a website dashboard to visualize users' experience of service quality at T-Mobile retail stores.<br><br>
+              <b>Technologies used:</b><br>
+              JavaScript, JQuery, CanvasJS, HTML5, CSS3, Bootstrap4, PHP, Apache, MySQL
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Okay..</button>
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Nice!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+                  <!-- Modal -->
+      <div class="modal fade" id="cave1Details" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h6 class="modal-title font-weight-bolder" id="exampleModalLabel">Ticket Help-Desk System</h6>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Created and implemented a full-stack designed Ticket Helpdesk System that is used by the employees.<br><br> 
+              The system handles customers' emails regarding IT tickets.<br><br>
+              <b>Technologies used:</b><br>
+              Google Appmaker, JavaScript, HTML5, CSS3, NodeJS, Google AppScript, Firebase, MySQL, Google Cloud Platform Services, Gitlab
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Okay..</button>
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Nice!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="cave2Details" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h6 class="modal-title font-weight-bolder" id="exampleModalLabel">Customer Interactive Ticket Help-Desk Website</h6>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Created a website for customer to interact with Cave's support team.<br><br>
+              <b>Technologies used:</b><br>
+              Angular, NodeJS, HTML5, CSS3, Bootstrap4, ExpressJS, Firebase
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Okay..</button>
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Nice!</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- Counter plugins -->
       <div id="sfcn634dzqgj1f5lfusp5uxugphx9dmssh4" style="pointer-events: none;"></div>
@@ -246,9 +437,7 @@
       </div>
     </div>
   </div>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/superfish/1.7.10/js/superfish.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
