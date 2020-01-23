@@ -91,11 +91,12 @@
   $('.nav-menu a, #mobile-nav a, .scrollto').on('click', function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
+
       if (target.length) {
         var top_space = 0;
 
         if ($('#header').length) {
-          top_space = $('#header').outerHeight();
+          top_space = 92;
 
           if (! $('#header').hasClass('header-scrolled')) {
             top_space = top_space - 20;
@@ -105,6 +106,7 @@
         $('html, body').animate({
           scrollTop: target.offset().top - top_space
         }, 1500, 'easeInOutExpo');
+
 
         if ($(this).parents('.nav-menu').length) {
           $('.nav-menu .menu-active').removeClass('menu-active');
@@ -152,14 +154,6 @@
     $(this).children('.carousel-background').remove();
   });
 
-  // $(".carousel").swipe({
-  //   swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
-  //     if (direction == 'left') $(this).carousel('next');
-  //     if (direction == 'right') $(this).carousel('prev');
-  //   },
-  //   allowPageScroll:"vertical"
-  // });
-
   // Skills section
   $('#skills').waypoint(function() {
     $('.progress .progress-bar').each(function() {
@@ -168,6 +162,7 @@
   }, { offset: '80%'} );
 
   // jQuery counterUp (used in Facts section)
+  // By Dviarck
   $('[data-toggle="counter-up"]').counterUp({
     delay: 10,
     time: 1000

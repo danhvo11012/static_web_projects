@@ -26,6 +26,7 @@
   // Initiate the wowjs animation library
   new WOW().init();
 
+
   // Initiate superfish on nav menu
   $('.nav-menu').superfish({
     animation: {
@@ -91,11 +92,13 @@
   $('.nav-menu a, #mobile-nav a, .scrollto').on('click', function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
+
       if (target.length) {
         var top_space = 0;
 
         if ($('#header').length) {
           top_space = $('#header').outerHeight();
+          console.log(top_space);
 
           if (! $('#header').hasClass('header-scrolled')) {
             top_space = top_space - 20;
@@ -105,6 +108,7 @@
         $('html, body').animate({
           scrollTop: target.offset().top - top_space
         }, 1500, 'easeInOutExpo');
+
 
         if ($(this).parents('.nav-menu').length) {
           $('.nav-menu .menu-active').removeClass('menu-active');
