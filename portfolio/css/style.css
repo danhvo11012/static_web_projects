@@ -460,6 +460,14 @@ h6 {
   color: #fff;
 }
 
+#mobile-nav-toggle.header-scrolled {
+  position: fixed;
+
+  margin: 15px 20px;
+  
+  transition: 0.4s;
+}
+
 /* Mobile Nav Styling */
 
 #mobile-nav {
@@ -762,6 +770,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 #skills .iconify {
   width: 35px !important;
   height: 50px !important;
+  position: relative;
+  right: 18px;
 }
 
 #skills .box:hover .title a {
@@ -908,8 +918,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #projects .projects-item .projects-info h4 {
-  font-size: 18px;
-  line-height: 1px;
+  font-size: 15px;
+  /* line-height: 1px; */
   font-weight: 700;
   margin-bottom: 18px;
   padding-bottom: 0;
@@ -1114,9 +1124,14 @@ body.mobile-nav-active #mobile-nav-toggle {
     bottom: 15px;
   }
 
-  /* #nav-menu-container a {
-    font-size: 30px;
-  } */
+  #nav-menu-container a {
+
+    display: none;
+    /* Since we use mobile toggle, let's ignore the props below */
+    font-size: 12px;
+    margin-left: -15px;
+    margin-right: auto;
+  }
 
   #header #logo h1 {
     font-size: 28px;
@@ -1131,7 +1146,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 
   #nav-menu-container {
-    display: none;
+    float: none !important;
+    top: 50%;
+    left: calc(50% + 15px);
   }
 
   #mobile-nav-toggle {
