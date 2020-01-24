@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Some plugin will be broken without this -->
   <meta charset="utf-8">
+
+  <!-- This is essential for media queries to work -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
   <title>Danh's Porfolio</title>
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -141,8 +147,9 @@
             <p class="h5">Some languages, frameworks, and technologies I'm using or familiar with..</p>
           </header>
 
-          <div class="row justify-content-md-center">
-            <div class="col-lg-8 col-md-8 box wow fadeInUp skill-block" data-wow-duration="0.3s">
+          <div class="row justify-content-center">
+            
+            <div class="col-lg-8 box wow fadeInUp skill-block" data-wow-duration="0.3s">
               <h5 class="title text-center"><a href="">Languages</a></h5>
               <div class="row justify-content-around align-items-center">
 
@@ -155,13 +162,13 @@
                 <div class="col-1 icon"><span class="iconify" data-icon="logos:graphql" data-inline="false"></span>
                 </div>
               </div>
-              <p class="description text-md-center">C++, Python 3, JavaScript<br> PHP, GraphQL</p>
+              <p class="description text-center">C++, Python 3, JavaScript<br> PHP, GraphQL</p>
             </div>
 
 
-            <div class="col-lg-8 col-md-8 box wow fadeInUp skill-block" data-wow-duration="0.6s">
+            <div class="col-lg-5 box wow fadeInUp skill-block" data-wow-duration="0.6s">
               <h4 class="title text-center"><a href="">Web Frameworks</a></h4>
-              <div class="row justify-content-around align-items-center">
+              <div class="row justify-content-around">
                 <div class="col-1 icon"><span class="iconify" data-icon="logos:react"
                     data-inline="false"></span></div>
                 <div class="col-1 icon"><span class="iconify" data-icon="logos:angular-icon"
@@ -174,7 +181,7 @@
                     data-inline="false"></span></div>
               </div>
 
-              <div class="row justify-content-around align-items-center">
+              <div class="row justify-content-around">
                 <div class="col-1 icon"><span class="iconify" data-icon="logos:nodejs"
                     data-inline="false"></span></div>
                 <div class="col-1 icon"><span class="iconify" data-icon="logos:jquery" data-inline="false"></span></span>
@@ -186,10 +193,10 @@
                 <div class="col-1 icon"><span class="iconify" data-icon="logos:mongodb" data-inline="false"></span>
                 </div>
               </div>
-              <p class="description text-md-center"> Reactjs, Angular, HTML5<br>CSS3, Bootstrap4, Nodejs<br>JQuery, MySQL</p>
+              <p class="description text-center"> Reactjs, Angular, HTML5<br>CSS3, Bootstrap4, Nodejs<br>JQuery, MySQL</p>
             </div>
 
-            <div class="col-lg-8 col-md-8 box wow fadeInUp skill-block" data-wow-duration="0.9s">
+            <div class="col-lg-5 box wow fadeInUp skill-block" data-wow-duration="0.9s">
               <h4 class="title text-sm-center"><a href="">Technologies</a></h4>
               <div class="row justify-content-around align-items-center">
 
@@ -204,7 +211,7 @@
                 <div class="col-1 icon"><span class="iconify" data-icon="logos:github-icon"
                     data-inline="false"></span></div>
               </div>
-              <div class="text-sm-center">
+              <div class="text-center">
                 <p class="description">Google Echo-system Products<br>Google Cloud Services<br>(App-script, App-maker, Cloud
                   Function)<br>Github</p>
               </div>
@@ -223,93 +230,93 @@
 
         <div class="stretch100vh d-flex flex-column align-items-center justify-content-center">
 
-        <div class="container d-flex flex-column align-items-center">
-          <div class="row wow fadeInDown">
+          <div class="container d-flex flex-column align-items-center">
+            <div class="row wow fadeInDown">
 
-            <header class="section-header">
-              <h3 class="section-title text-white">Projects</h3>
-              <br><br>
-              <p class="text-center h5">Projects I have done or working on..</p>
-            </header>
+              <header class="section-header">
+                <h3 class="section-title text-white">Projects</h3>
+                <br><br>
+                <p class="text-center h5">Projects I have done or working on..</p>
+              </header>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-12">
+                <ul id="projects-flters">
+                  <li data-filter="*" class="filter-active">All</li>
+                  <li data-filter=".filter-tmus">T-Mobile</li>
+                  <li data-filter=".filter-cave">Cave Consulting</li>
+                  <li data-filter=".filter-others">Others</li>
+                </ul>
+              </div>
+            </div>
           </div>
 
-          <div class="row">
-            <div class="col-lg-12">
-              <ul id="projects-flters">
-                <li data-filter="*" class="filter-active">All</li>
-                <li data-filter=".filter-tmus">T-Mobile</li>
-                <li data-filter=".filter-cave">Cave Consulting</li>
-                <li data-filter=".filter-others">Others</li>
-              </ul>
+          <div class="container">
+            <div class="row projects-container">
+              <div class="col-lg-6 col-md-6 projects-item filter-tmus wow fadeInUp">
+                <div class="projects-wrap">
+                  <figure>
+                    <img src="./images/tmus1.jpg" class="img-fluid" alt="">
+                    <button type="button" class="btn btn-outline-success link-details" data-toggle="modal" data-target="#tmus1Details">
+                      Details
+                    </button>
+                  </figure>
+
+                  <div class="projects-info">
+                    <h4><a href="#">Anomaly Detection AI System</a></h4>
+                    <!-- <p>TMUS 1</p> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 projects-item filter-tmus wow fadeInUp" data-wow-delay="0.1s">
+                <div class="projects-wrap">
+                  <figure>
+                    <img src="./images/tmus2.png" class="img-fluid" alt="">
+                    <button type="button" class="btn btn-outline-success link-details" data-toggle="modal" data-target="#tmus2Details">
+                      Details
+                    </button>
+                  </figure>
+
+                  <div class="projects-info">
+                    <h4><a href="#">Retail Experience Dashboard</a></h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 projects-item filter-cave wow fadeInUp" data-wow-delay="0.2s">
+                <div class="projects-wrap">
+                  <figure>
+                    <img src="./images/cave1.png" class="img-fluid" alt="">
+                    <button type="button" class="btn btn-outline-success link-details" data-toggle="modal" data-target="#cave1Details">
+                      Details
+                    </button>
+                  </figure>
+
+                  <div class="projects-info">
+                    <h4><a href="#">Ticket Help-Desk System</a></h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 projects-item filter-cave wow fadeInUp">
+                <div class="projects-wrap">
+                  <figure>
+                    <img src="./images/cave2.png" class="img-fluid" alt="">
+                    
+                    <button type="button" class="btn btn-outline-success link-details" data-toggle="modal" data-target="#cave2Details">
+                      Details
+                    </button>
+                  </figure>
+
+                  <div class="projects-info">
+                    <h4><a href="#">Customer Interactive Ticket Help-Desk Website</a></h4>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-
-        <div class="container">
-          <div class="row projects-container">
-            <div class="col-lg-6 col-md-6 projects-item filter-tmus wow fadeInUp">
-              <div class="projects-wrap">
-                <figure>
-                  <img src="./images/tmus1.jpg" class="img-fluid" alt="">
-                  <button type="button" class="btn btn-outline-success link-details" data-toggle="modal" data-target="#tmus1Details">
-                    Details
-                  </button>
-                </figure>
-
-                <div class="projects-info">
-                  <h4><a href="#">Anomaly Detection AI System</a></h4>
-                  <!-- <p>TMUS 1</p> -->
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-6 col-md-6 projects-item filter-tmus wow fadeInUp" data-wow-delay="0.1s">
-              <div class="projects-wrap">
-                <figure>
-                  <img src="./images/tmus2.png" class="img-fluid" alt="">
-                  <button type="button" class="btn btn-outline-success link-details" data-toggle="modal" data-target="#tmus2Details">
-                    Details
-                  </button>
-                </figure>
-
-                <div class="projects-info">
-                  <h4><a href="#">Retail Experience Dashboard</a></h4>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-6 col-md-6 projects-item filter-cave wow fadeInUp" data-wow-delay="0.2s">
-              <div class="projects-wrap">
-                <figure>
-                  <img src="./images/cave1.png" class="img-fluid" alt="">
-                  <button type="button" class="btn btn-outline-success link-details" data-toggle="modal" data-target="#cave1Details">
-                    Details
-                  </button>
-                </figure>
-
-                <div class="projects-info">
-                  <h4><a href="#">Ticket Help-Desk System</a></h4>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-6 col-md-6 projects-item filter-cave wow fadeInUp">
-              <div class="projects-wrap">
-                <figure>
-                  <img src="./images/cave2.png" class="img-fluid" alt="">
-                  
-                  <button type="button" class="btn btn-outline-success link-details" data-toggle="modal" data-target="#cave2Details">
-                    Details
-                  </button>
-                </figure>
-
-                <div class="projects-info">
-                  <h4><a href="#">Customer Interactive Ticket Help-Desk Website</a></h4>
-                </div>
-              </div>
-            </div>
-            </div>
-            </div>
         </div>
       </section><!-- #projects -->
 
