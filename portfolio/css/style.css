@@ -728,7 +728,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #skills .box {
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 /* #skills .icon {
@@ -776,7 +776,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #skills .skill-block {
   margin-top: 50px;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 
 /* Projects Section
