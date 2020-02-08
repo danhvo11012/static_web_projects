@@ -183,6 +183,8 @@
 
     projectsIsotope.isotope({ filter: $(this).data('filter') });
   });
-
 })(jQuery);
 
+function showModal(modalId) {
+  $(modalId).modal("show");
+}
